@@ -1,4 +1,4 @@
-//U10316053
+//U10316053 程柏綸
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
@@ -61,43 +61,58 @@ public class StillCalculator extends Application {
 		BMadd.setPrefSize(80, 80);
 		Button BMsub = new Button("M-");
 		BMsub.setPrefSize(80, 80);
-		Button BMS = new Button("MS");
-		BMS.setPrefSize(80, 80);
 		
-		display.add(B1,0,0);
-		display.add(B2,1,2);
-		display.add(B3,1,3);
+		Button Bxx = new Button("x２");
+		Bxx.setPrefSize(80, 80);
+		Button B1divx = new Button("1/x");
+		B1divx.setPrefSize(80, 80);
+		Button BMC = new Button("MC");
+		BMC.setPrefSize(80, 80);
+		Button BMR = new Button("MR");
+		BMR.setPrefSize(80, 80);
+		Button BBack = new Button("<-");
+		BBack.setPrefSize(80, 80);
+		
+		
+		
+		display.add(BMC,1,0);
+		display.add(BMR,2,0);
+		display.add(BMadd,3,0);
+		display.add(BMsub,4,0);
+		
 		display.add(B4,1,4);
-		display.add(B5,1,5);
-		display.add(B6,1,6);
-		display.add(B7,1,7);
-		display.add(B8,1,8);
-		display.add(B9,1,9);
-		display.add(B0,1,10);
-		display.add(Bequ,1,11);
-		display.add(Badd,1,12);
-		display.add(Bsub,1,13);
-		display.add(Bmul,1,14);
-		display.add(Bdiv,1,15);
-		display.add(Bsign,1,15);
-		display.add(Bddiv,1,15);
-		display.add(Bpa,1,15);
-		display.add(BC,1,15);
-		display.add(BCE,1,15);
-		display.add(Bdot,1,15);
-		display.add(BMadd,1,15);
-		display.add(BMsub,1,15);
-		display.add(BMS,1,15);
+		display.add(B1,1,5);
+		display.add(Bsign,1,6);
+		display.add(Bpa,1,1);
+		display.add(B7,1,3);
+		display.add(BCE,1,2);
+		
+		display.add(B2,2,5);
+		display.add(B5,2,4);
+		display.add(B8,2,3);
+		display.add(B0,2,6);
+		display.add(Bddiv,2,1);
+		display.add(BC,2,2);
+		
+		display.add(Bxx,3,1);
+		display.add(Bdot,3,6);
+		display.add(B9,3,3);
+		display.add(B6,3,4);
+		display.add(BBack,3,2);
+		display.add(B3,3,5);
+		
+		display.add(Bequ,4,6);
+		display.add(Badd,4,5);
+		display.add(Bsub,4,4);
+		display.add(Bmul,4,3);
+		display.add(Bdiv,4,2);
+		display.add(B1divx,4,1);
 		
 		
 		MenuBar bar = new MenuBar();
-		// --- Menu View
 		Menu menu1 = new Menu("檢視");
-		// --- Menu Edit
 		Menu menu2 = new Menu("編輯");
-		// --- Menu Help
 		Menu menu3 = new Menu("說明");
-		
 		
 		bar.getMenus().addAll(menu1,menu2,menu3);
 		display.add(bar,0,0,6,1);
